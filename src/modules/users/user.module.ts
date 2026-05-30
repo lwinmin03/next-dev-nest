@@ -9,7 +9,7 @@ import { User } from "src/entity/user.entity";
         TypeOrmModule.forFeature([User])
     ]
     ,
-    controllers:[UserController],providers:[UserService],exports:[UserService]})
+    controllers:[UserController],providers:[UserService],exports:[UserService,TypeOrmModule]})
 
 
 export class UserModule{}
